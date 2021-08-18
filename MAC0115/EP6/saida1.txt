@@ -1,0 +1,15 @@
+
+Este programa utiliza o algoritmo Crivo de Eratóstenes para determinar 
+ todos os números primos até um dado número inteiro positivo.
+_____________________________________________________________________________
+
+Digite um número inteiro positivo para n:
+Os 33 números primos menores ou iguais a 137 são:
+
+   2    3    5    7   11   13   17   19   23   29 
+  31   37   41   43   47   53   59   61   67   71 
+  73   79   83   89   97  101  103  107  109  113 
+ 127  131  137 
+
+_____________________________________________________________________________
+

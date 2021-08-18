@@ -1,0 +1,12 @@
+
+Este programa utiliza o algoritmo Crivo de Eratóstenes para determinar 
+ todos os números primos até um dado número inteiro positivo.
+_____________________________________________________________________________
+
+Digite um número inteiro positivo para n: 
+Os 9 números primos menores ou iguais a 23 são:
+
+   2    3    5    7   11   13   17   19   23 
+
+_____________________________________________________________________________
+

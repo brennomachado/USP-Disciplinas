@@ -1,0 +1,26 @@
+############################################################################
+### Este programa lê um arquivo de texto com uma sequência de nomes,     ###
+### e cria outro arquivo com os nomes lidos em ordem alfabética          ###
+############################################################################
+
+-- FORAM LIDOS 7 NOMES
+
+
+-- A SEQUÊNCIA INICIAL DE NOMES É:
+Brenno Pereira Machado
+Eduardo Monteiro
+Francisco Antônio Brinco
+Eduardo Monteiro de Alvarenga Coelho
+Maria do Carmo Pereira Machado
+Eduardo Monteiro de Alvarenga
+Carolina Rodriguês
+
+
+-- A SEQUÊNCIA DE NOMES EM ORDEM ALFABÉTICA É:
+Brenno Pereira Machado
+Carolina Rodriguês
+Eduardo Monteiro
+Eduardo Monteiro de Alvarenga
+Eduardo Monteiro de Alvarenga Coelho
+Francisco Antônio Brinco
+Maria do Carmo Pereira Machado

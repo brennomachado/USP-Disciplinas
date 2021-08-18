@@ -1,0 +1,23 @@
+--->  Jogador da vez é 'O'.
+
+Jogador 'O' colocou sua marca na posição (4, 2).
+1 'X'(s) revertido(s) para 'O'(s).
+
+
+'X' tem 6 marca(s) no tabuleiro
+'O' tem 7 marca(s) no tabuleiro
+
+--->  Jogador da vez é 'X'.
+
+
+Digite a linha da posição em que pretende jogar: 5
+
+Digite a coluna da posição em que pretende jogar: 5
+
+Jogador 'X' nao pode jogar na posição (5, 5).
+
+Não há movimento válido para o jogador 'O'.
+
+PARTIDA TERMINADA.
+
+Jogador 'X' venceu!!!

@@ -1,0 +1,26 @@
+############################################################################
+### Este programa lê um arquivo de texto com uma sequência de nomes,     ###
+### e cria outro arquivo com os nomes lidos em ordem alfabética          ###
+############################################################################
+
+-- FORAM LIDOS 7 NOMES
+
+
+-- A SEQUÊNCIA INICIAL DE NOMES É:
+Basilio c
+Basílio b
+Basílio B
+Basílio a
+Antônio A
+Antônio B
+Basíl Z
+
+
+-- A SEQUÊNCIA DE NOMES EM ORDEM ALFABÉTICA É:
+Antônio A
+Antônio B
+Basíl Z
+Basílio a
+Basílio b
+Basílio B
+Basilio c

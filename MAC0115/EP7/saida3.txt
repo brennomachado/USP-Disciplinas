@@ -1,0 +1,54 @@
+############################################################################
+### Este programa lê um arquivo de texto com uma sequência de nomes,     ###
+### e cria outro arquivo com os nomes lidos em ordem alfabética          ###
+############################################################################
+
+-- FORAM LIDOS 21 NOMES
+
+
+-- A SEQUÊNCIA INICIAL DE NOMES É:
+Glauber Henrique Jacomini
+Manu Andrade Estephan
+Talita Moreira
+Eduardo de Queiroz e Silva
+Inaha Bacellar Vasconcelos
+Gabriel Araujo Hirayama
+Plinio Marcelo Vargas Guimaraes
+Guilherme Lima N. Machado
+Brenno Pereira Machado
+Adilson Guilherme do Prado Cadena
+Marcos Paulo Pereira Bueno
+Rafael Moschetti de Carvalho Gomes
+Isaac Ribeiro de Moura
+Carlos Aparecido Alvares Teixeira
+Rogerio Deutsch Filho
+Lucas Vanzella de Matos
+Victor Melly Cabredo
+Gustavo Bezerra Silva
+Fellipe Marcellus Santos de Oliveira
+Rayssa da Costa Freire
+Cláudio Luiz Alves
+
+
+-- A SEQUÊNCIA DE NOMES EM ORDEM ALFABÉTICA É:
+Adilson Guilherme do Prado Cadena
+Brenno Pereira Machado
+Carlos Aparecido Alvares Teixeira
+Cláudio Luiz Alves
+Eduardo de Queiroz e Silva
+Fellipe Marcellus Santos de Oliveira
+Gabriel Araujo Hirayama
+Glauber Henrique Jacomini
+Guilherme Lima N. Machado
+Gustavo Bezerra Silva
+Inaha Bacellar Vasconcelos
+Isaac Ribeiro de Moura
+Lucas Vanzella de Matos
+Manu Andrade Estephan
+Marcos Paulo Pereira Bueno
+Plinio Marcelo Vargas Guimaraes
+Rafael Moschetti de Carvalho Gomes
+Rayssa da Costa Freire
+Rogerio Deutsch Filho
+Talita Moreira
+Victor Melly Cabredo
