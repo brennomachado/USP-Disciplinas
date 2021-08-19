@@ -15,24 +15,49 @@ e, ainda assim, poderão ser punidos por desonestidade acadêmica.
 # ===============================================================
 
 def main():
-    ''' 
-    a função main é opcional. 
-    Caso desejar, inclua e deixe aqui os testes que você fez 
-    com as funções Hmaior e Hmenor.
+    '''  Função principal do programa que calcula o número harmônico
     '''
-    print("testes das funções")
+ 
+    print()
+    print("###############################################################")
+    print("###                    HARMÔNICO SIMPLES                    ###")
+    print("###   Esse programa calcula o número harmônico de ordem N   ###")
+    print("###   através de duas formas distintas                      ###")
+    print("###############################################################\n")
+
+    n = int(input("\nDigite o número inteiro N para o cálculo do HarmÔnico de ordem N:"))
+
+    valorHMaior = Hmaior(n)
+    valorHmenor = Hmenor(n)
+
+    print("\nValor para Harmônico de ordem", n, "calculado com a função Hmaior() é", valorHMaior)
+    print("Valor para Harmônico de ordem", n, "calculado com a função Hmenor() é", valorHmenor)
+    
+    print("\nA diferença entre os dois cálculos é de %.17f" % (abs(valorHmenor - valorHMaior)))
 
 
 def Hmaior(n):
-    ''' escreva uma documentação para essa função
+    ''' (int) -> float
+    Recebe um número inteiro "n" e retorna o harmonico simpĺes para "n" calculado a partir do maior termo.
     '''
+
+    harmonico = 0.0
+    for i in range(1, n+1, 1):
+        harmonico += 1.0/i
+
+    return harmonico
 
 
 def Hmenor(n):
     ''' escreva uma documentação para essa função
     '''
 
+    harmonico = 0.0
+    for i in range(n, 0, -1):
+        harmonico += 1.0/i
+
+    return harmonico
+
 if __name__ == '__main__':
     main()
-    n = int(input("\n Digite o número inteiro N para o cálculo do Harmonico de ordem N:"))
-    
+
