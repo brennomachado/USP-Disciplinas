@@ -21,8 +21,7 @@ Cada função deve calcular as sequências na ordem definida nesse enunciado.
 O que você deve entregar
 
 Um arquivo Python (com extensão .py) contendo as duas funções: Hmaior() e Hmenor() e o seguinte esqueleto:
-
-# ===============================================================
+---
 """
 Ao incluir esse cabeçalho declaro que todas as partes originais
 desse exercício individual foram desenvolvidas e implementadas por
@@ -36,7 +35,7 @@ disciplina.
 Entendo que exercícios sem esse cabeçalho devem receber nota zero
 e, ainda assim, poderão ser punidos por desonestidade acadêmica.    
 """
-# ===============================================================
+---
 
 def main():
     ''' 

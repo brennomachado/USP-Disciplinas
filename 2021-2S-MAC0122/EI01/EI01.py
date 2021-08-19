@@ -25,7 +25,7 @@ def main():
     print("###   através de duas formas distintas                      ###")
     print("###############################################################\n")
 
-    n = int(input("\nDigite o número inteiro N para o cálculo do HarmÔnico de ordem N:"))
+    n = int(input("\nDigite o número inteiro N para o cálculo do Harmônico de ordem N:"))
 
     valorHMaior = Hmaior(n)
     valorHmenor = Hmenor(n)
