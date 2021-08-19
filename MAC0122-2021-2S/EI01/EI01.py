@@ -55,7 +55,8 @@ def Hmaior(n):
 
 
 def Hmenor(n):
-    ''' escreva uma documentação para essa função
+    ''' (int) -> float
+    Recebe um número inteiro "n" e retorna o harmonico simpĺes para "n" calculado a partir do menor termo.
     '''
 
     harmonico = 0.0
