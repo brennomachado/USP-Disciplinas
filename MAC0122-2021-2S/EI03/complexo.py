@@ -66,13 +66,13 @@ def main():
     c2 = Complexo(r,i)
     print(f"\n    Você digitou o número complexo: {c2}\n\n")
 
-
     print(f"## MULTIPLICAÇÃO ##")
     print(f"    ({c1})*({c2}) = {c1 * c2}")
 
     print(f"\n## SOMA ##")
     print(f"    ({c1})+({c2}) = {c1.some(c2)}")
     
+# ===================================================================
 class Complexo:
     '''Classe utilizada para representar um número Complexo.
 
@@ -113,7 +113,6 @@ class Complexo:
         self.real = float(r)
         self.imag = float(i)
 
-        
     #------------------------------------------------------------------------------        
     def __str__(self):
         '''(Complexo) -> str
@@ -164,8 +163,6 @@ class Complexo:
             return f"{sinal}j{imaginario}"
         return f"{self.real}{sinal}j{imaginario}"   
         '''
-
-
 
     #------------------------------------------------------------------------------        
     def some(self, other):
