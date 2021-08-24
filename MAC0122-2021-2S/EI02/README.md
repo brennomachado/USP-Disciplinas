@@ -35,7 +35,7 @@ Leia os textos sugeridos na seção Estudo premilinar.
 - Escreva a função HFmenor() e teste-a.
 - após testar, e testar de novo, submeta apenas o arquivo fraction.py.
 
-#Honestidade acadêmica
+# Honestidade acadêmica
 
 Esse é um exercício individual, não em grupo. Isso não significa que você não pode receber ajuda de outras pessoas, inclusive de seus colegas. De uma forma geral, gostaríamos de incentivar as discussões de ideias, conceitos e alternativas de solução. Nossa maior recomendação é evitar olhar o código fonte de uma solução antes de escrever o seu programa. Em caso de dúvida, consulte a página Sobre colaboração em MAC0122
 
