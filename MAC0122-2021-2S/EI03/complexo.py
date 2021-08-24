@@ -142,17 +142,16 @@ class Complexo:
         >>>         
         '''
         
-        '''
         ## Faz a impressão do número complexo mais próximo do comum observado em livros
+        '''
         if self.imag == 0 :
             return f"{self.real}"
         elif self.real == 0 :
             return f"{self.imag:+}i"
         return f"{self.real}{self.imag:+}i" 
-
-        ## Faz a impressão do número complexo do jeito que está no enunciado do EI03
         '''
-        
+
+        ## Faz a impressão do número complexo do jeito que está no enunciado e docstring do EI03
         imaginario = self.imag
         if self.imag < 0 :
                 imaginario *= (-1)
