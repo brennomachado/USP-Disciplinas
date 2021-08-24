@@ -6,8 +6,8 @@
 
 '''
 
-    Nome:
-    NUSP:
+    Nome: Brenno Pereira Machado
+    NUSP: 6434401
 
     Ao preencher esse cabeçalho com o meu nome e o meu número USP,
     declaro que todas as partes originais desse exercício programa
@@ -43,6 +43,36 @@
 
 # ===================================================================
 
+def main():
+    '''  Função principal do programa que calcula soma e multiplicação de dois numeros complexos
+    '''
+
+    print()
+    print("###############################################################")
+    print("###                    NÚMEROS COMPLEXOS                    ###")
+    print("###   Esse programa calcula a soma e a multiplicação entre  ###")
+    print("###   dois números complexos inseridos pelo usuário         ###")
+    print("###############################################################\n")
+
+    print("## Primeiro número complexo ##")
+    r = float(input("\n    Digite a parte REAL para o primeiro número complexo: "))
+    i = float(input("\n    Digite a parte IMAGINÁRIA para o primeiro número complexo: "))
+    c1 = Complexo(r, i)
+    print(f"\n    Você digitou o número complexo: {c1}")
+
+    print("\n\n## Segundo número complexo ##")
+    r = float(input("\n    Digite a parte REAL para o segundo número complexo: "))
+    i = float(input("\n    Digite a parte IMAGINÁRIA para o segundo número complexo: "))
+    c2 = Complexo(r,i)
+    print(f"\n    Você digitou o número complexo: {c2}\n\n")
+
+
+    print(f"## MULTIPLICAÇÃO ##")
+    print(f"    ({c1})*({c2}) = {c1 * c2}")
+
+    print(f"\n## SOMA ##")
+    print(f"    ({c1})+({c2}) = {c1.some(c2)}")
+    
 class Complexo:
     '''Classe utilizada para representar um número Complexo.
 
@@ -80,7 +110,9 @@ class Complexo:
         9.0 4.0
         >>> 
         '''
-        print("Vixe! Ainda não fiz o método __init__()")
+        self.real = float(r)
+        self.imag = float(i)
+
         
     #------------------------------------------------------------------------------        
     def __str__(self):
@@ -110,7 +142,30 @@ class Complexo:
         8.0
         >>>         
         '''
-        return "Vixe! Ainda não fiz o método __str__()"    
+        
+        ## Faz a impressão do número complexo mais próximo do comum
+        if self.imag == 0 :
+            return f"{self.real}"
+        elif self.real == 0 :
+            return f"{self.imag:+}i"
+        return f"{self.real}{self.imag:+}i" 
+
+        ## Faz a impressão do número complexo jeito que está no enunciado do EI03
+        '''
+        imaginario = self.imag
+        if self.imag < 0 :
+                imaginario *= (-1)
+                sinal = "-"
+        else :
+            sinal = "+"
+        if self.imag == 0 :
+            return f"{self.real}"
+        elif self.real == 0 :
+            return f"{sinal}j{imaginario}"
+        return f"{self.real}{sinal}j{imaginario}"   
+        '''
+
+
 
     #------------------------------------------------------------------------------        
     def some(self, other):
@@ -129,7 +184,8 @@ class Complexo:
         17.0+j4.0
         >>>         
         '''
-        print( "Vixe! Ainda não fiz o método some" )
+
+        return Complexo(self.real + other.real, self.imag + other.imag)
 
     #------------------------------------------------------------------------------        
     def __mul__(self, other):
@@ -148,7 +204,9 @@ class Complexo:
         -5.0+j10.0
         >>>         
         '''
-        print("Vixe! Ainda não fiz o método __mul__()")
+        
+        return Complexo(self.real*other.real + (self.imag*other.imag)*(-1) , self.real*other.imag + self.imag*other.real)
 
-
+if __name__ == "__main__":
+    main()
 
