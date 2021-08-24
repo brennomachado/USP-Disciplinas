@@ -143,7 +143,7 @@ class Complexo:
         >>>         
         '''
         
-        ## Faz a impressão do número complexo mais próximo do comum
+        ## Faz a impressão do número complexo mais próximo do comum observado em livros
         if self.imag == 0 :
             return f"{self.real}"
         elif self.real == 0 :
