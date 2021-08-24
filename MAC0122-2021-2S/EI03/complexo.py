@@ -142,6 +142,7 @@ class Complexo:
         >>>         
         '''
         
+        '''
         ## Faz a impressão do número complexo mais próximo do comum observado em livros
         if self.imag == 0 :
             return f"{self.real}"
@@ -149,8 +150,9 @@ class Complexo:
             return f"{self.imag:+}i"
         return f"{self.real}{self.imag:+}i" 
 
-        ## Faz a impressão do número complexo jeito que está no enunciado do EI03
+        ## Faz a impressão do número complexo do jeito que está no enunciado do EI03
         '''
+        
         imaginario = self.imag
         if self.imag < 0 :
                 imaginario *= (-1)
@@ -162,7 +164,7 @@ class Complexo:
         elif self.real == 0 :
             return f"{sinal}j{imaginario}"
         return f"{self.real}{sinal}j{imaginario}"   
-        '''
+        
 
     #------------------------------------------------------------------------------        
     def some(self, other):
