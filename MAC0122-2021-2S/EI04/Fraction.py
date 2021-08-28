@@ -76,103 +76,115 @@ def main():
     print("   # Testes para SOMA")
     fracao1 = Fraction()
     fracao2 = 0
-    print(f"      {fracao1} + {fracao2} = {fracao1 + fracao2} ==> Esperado = 0/1")
-
+    print(f"      {fracao1}  + {fracao2}    = {fracao1 + fracao2}  ==> Esperado = 0/1")
     fracao1 = Fraction()
     fracao2 = 1
-    print(f"      {fracao1} + {fracao2} = {fracao1 + fracao2} ==> Esperado = 1/1")
-
+    print(f"      {fracao1}  + {fracao2}    = {fracao1 + fracao2}  ==> Esperado = 1/1")
     fracao1 = Fraction(3,2)
     fracao2 = 0
-    print(f"      {fracao1} + {fracao2} = {fracao1 + fracao2} ==> Esperado = 3/2")
-
+    print(f"      {fracao1}  + {fracao2}    = {fracao1 + fracao2}  ==> Esperado = 3/2")
     fracao1 = 0
     fracao2 = Fraction(3,2)
-    print(f"      {fracao1} + {fracao2} = {fracao1 + fracao2} ==> Esperado = 3/2")
-
+    print(f"      {fracao1}    + {fracao2}  = {fracao1 + fracao2}  ==> Esperado = 3/2")
     fracao1 = Fraction(3,2)
     fracao2 = 3
-    print(f"      {fracao1} + {fracao2} = {fracao1 + fracao2} ==> Esperado = 9/2")
-
+    print(f"      {fracao1}  + {fracao2}    = {fracao1 + fracao2}  ==> Esperado = 9/2")
     fracao1 = 3
     fracao2 = Fraction(3,2)
-    print(f"      {fracao1} + {fracao2} = {fracao1 + fracao2} ==> Esperado = 9/2")
-
+    print(f"      {fracao1}    + {fracao2}  = {fracao1 + fracao2}  ==> Esperado = 9/2")
     fracao1 = Fraction(48,12)
     fracao2 = Fraction(3,2)
-    print(f"      {fracao1} + {fracao2} = {fracao1 + fracao2} ==> Esperado = 11/2")
-
+    print(f"      {fracao1}  + {fracao2}  = {fracao1 + fracao2} ==> Esperado = 11/2")
     fracao1 = Fraction(3,2)
     fracao2 = Fraction(48,12)
-    print(f"      {fracao1} + {fracao2} = {fracao1 + fracao2} ==> Esperado = 11/2")
-
+    print(f"      {fracao1}  + {fracao2}  = {fracao1 + fracao2} ==> Esperado = 11/2")
     fracao1 = Fraction(33,9)
     fracao2 = 7
-    print(f"      {fracao1} + {fracao2} = {fracao1 + fracao2} ==> Esperado = 32/3")
-
+    print(f"      {fracao1} + {fracao2}    = {fracao1 + fracao2} ==> Esperado = 32/3")
     fracao1 = 7
     fracao2 = Fraction(33,9)
-    print(f"      {fracao1} + {fracao2} = {fracao1 + fracao2} ==> Esperado = 32/3")
+    print(f"      {fracao1}    + {fracao2} = {fracao1 + fracao2} ==> Esperado = 32/3")
     
     #=============================================================================
     print("\n   # Testes para DIVISÃO")
+    fracao1 = Fraction(0)
+    fracao2 = 1
+    print(f"      {fracao1}  ÷ {fracao2}    = {fracao1 / fracao2}   ==> Esperado = 0/1")
     fracao1 = 0
     fracao2 = Fraction(1)
-    print(f"      {fracao1} ÷ {fracao2} = {fracao1 / fracao2} ==> Esperado = 0/1")
-
+    print(f"      {fracao1}    ÷ {fracao2}  = {fracao1 / fracao2}   ==> Esperado = 0/1")
     fracao1 = Fraction(11,3)
     fracao2 = 1
-    print(f"      {fracao1} ÷ {fracao2} = {fracao1 / fracao2} ==> Esperado = 11/3")
-
+    print(f"      {fracao1} ÷ {fracao2}    = {fracao1 / fracao2}  ==> Esperado = 11/3")
     fracao1 = 1
     fracao2 = Fraction(11,3)
-    print(f"      {fracao1} ÷ {fracao2} = {fracao1 / fracao2} ==> Esperado = 3/11")
-
+    print(f"      {fracao1}    ÷ {fracao2} = {fracao1 / fracao2}  ==> Esperado = 3/11")
     fracao1 = Fraction(33,3)
     fracao2 = 1
-    print(f"      {fracao1} ÷ {fracao2} = {fracao1 / fracao2} ==> Esperado = 11/1")
-
+    print(f"      {fracao1} ÷ {fracao2}    = {fracao1 / fracao2}  ==> Esperado = 11/1")
     fracao1 = 1
     fracao2 = Fraction(33,3)
-    print(f"      {fracao1} ÷ {fracao2} = {fracao1 / fracao2} ==> Esperado = 1/11")
-
+    print(f"      {fracao1}    ÷ {fracao2} = {fracao1 / fracao2}  ==> Esperado = 1/11")
     fracao1 = Fraction(16,4)
     fracao2 = Fraction(8,7)
-    print(f"      {fracao1} ÷ {fracao2} = {fracao1 / fracao2} ==> Esperado = 7/2")
-
+    print(f"      {fracao1}  ÷ {fracao2}  = {fracao1 / fracao2}   ==> Esperado = 7/2")
     fracao1 = Fraction(8,7)
     fracao2 = Fraction(16,4)
-    print(f"      {fracao1} ÷ {fracao2} = {fracao1 / fracao2} ==> Esperado = 2/7")
-
+    print(f"      {fracao1}  ÷ {fracao2}  = {fracao1 / fracao2}   ==> Esperado = 2/7")
     fracao1 = Fraction(4,2)
     fracao2 = Fraction(10,4)
-    print(f"      {fracao1} ÷ {fracao2} = {fracao1 / fracao2} ==> Esperado = 4/5")
-
+    print(f"      {fracao1}  ÷ {fracao2}  = {fracao1 / fracao2}   ==> Esperado = 4/5")
     fracao1 = Fraction(10,4)
     fracao2 = Fraction(4,2)
-    print(f"      {fracao1} ÷ {fracao2} = {fracao1 / fracao2} ==> Esperado = 5/4")
-
+    print(f"      {fracao1}  ÷ {fracao2}  = {fracao1 / fracao2}   ==> Esperado = 5/4")
     fracao1 = Fraction(0)
     fracao2 = Fraction(17,5)
-    print(f"      {fracao1} ÷ {fracao2} = {fracao1 / fracao2} ==> Esperado = 0/1")
-
+    print(f"      {fracao1}  ÷ {fracao2} = {fracao1 / fracao2}   ==> Esperado = 0/1")
     fracao1 = Fraction(17,5)
     fracao2 = 3
-    print(f"      {fracao1} ÷ {fracao2} = {fracao1 / fracao2} ==> Esperado = 17/15")
-
+    print(f"      {fracao1} ÷ {fracao2}    = {fracao1 / fracao2} ==> Esperado = 17/15")
     fracao1 = 3
     fracao2 = Fraction(17,5)
-    print(f"      {fracao1} ÷ {fracao2} = {fracao1 / fracao2} ==> Esperado = 15/17")
-
+    print(f"      {fracao1}    ÷ {fracao2} = {fracao1 / fracao2} ==> Esperado = 15/17")
     fracao1 = Fraction(4,16)
     fracao2 = 8
-    print(f"      {fracao1} ÷ {fracao2} = {fracao1 / fracao2} ==> Esperado = 1/32")
-
+    print(f"      {fracao1}  ÷ {fracao2}    = {fracao1 / fracao2}  ==> Esperado = 1/32")
     fracao1 = 8
     fracao2 = Fraction(4,16)
-    print(f"      {fracao1} ÷ {fracao2} = {fracao1 / fracao2} ==> Esperado = 32/1")
+    print(f"      {fracao1}    ÷ {fracao2}  = {fracao1 / fracao2}  ==> Esperado = 32/1")
 
-
+    #=============================================================================
+    print("\n   # Testes para EQUIDADE")
+    fracao1 = Fraction(0)
+    fracao2 = 0
+    print(f"      {fracao1}  == {fracao2}    => {fracao1 == fracao2}  ==> Esperado = True")
+    fracao1 = 0
+    fracao2 = Fraction(0)
+    print(f"      {fracao1}    == {fracao2}  => {fracao1 == fracao2}  ==> Esperado = True")
+    fracao1 = Fraction(1,1)
+    fracao2 = 1
+    print(f"      {fracao1}  == {fracao2}    => {fracao1 == fracao2}  ==> Esperado = True")
+    fracao1 = Fraction(4,2)
+    fracao2 = 2
+    print(f"      {fracao1}  == {fracao2}    => {fracao1 == fracao2}  ==> Esperado = True")
+    fracao1 = Fraction(11,3)
+    fracao2 = Fraction(11,3)
+    print(f"      {fracao1} == {fracao2} => {fracao1 == fracao2}  ==> Esperado = True")
+    fracao1 = 22
+    fracao2 = Fraction(66,3)
+    print(f"      {fracao1}   == {fracao2} => {fracao1 == fracao2}  ==> Esperado = True")
+    fracao1 = Fraction(7,5)
+    fracao2 = Fraction(5,7)
+    print(f"      {fracao1}  == {fracao2}  => {fracao1 == fracao2} ==> Esperado = False")
+    fracao1 = Fraction(4,1)
+    fracao2 = 2
+    print(f"      {fracao1}  == {fracao2}    => {fracao1 == fracao2} ==> Esperado = False")
+    fracao1 = Fraction(3,5)
+    fracao2 = 5
+    print(f"      {fracao1}  == {fracao2}    => {fracao1 == fracao2} ==> Esperado = False")
+    fracao1 = 5
+    fracao2 = Fraction(3,5)
+    print(f"      {fracao1}    == {fracao2}  => {fracao1 == fracao2} ==> Esperado = False")
 
 # ===================================================================
 #
@@ -223,7 +235,6 @@ class Fraction:
         self.num = cima // n
         self.den = baixo // n
         
-    
     #------------------------------------
     def __str__(self):
         '''(Fraction) -> str
@@ -278,7 +289,7 @@ class Fraction:
                                             Fraction / int
         """
 
-        if type(other) is int:
+        if type(other) is int: 
             novo_numerador = self.num
             novo_denominador = self.den*other
         else :
@@ -294,16 +305,20 @@ class Fraction:
         Retorna a divisão do int `other` pela Fraction `self`.
         Usado pelo Python quando escrevemos int / Fraction
         """
-        return self / other
+
+        novo_numerador = other*self.den
+        novo_denominador = self.num
+        return Fraction(novo_numerador,novo_denominador)
 
     #-------------------------------------
     def __eq__(self, other):
-        """ (Fraction, Fraction ou int) -> Fraction
+        """ (Fraction, Fraction ou int) -> True ou False
 
         Retorna a comparação da Fraction `self` com a Fraction ou int `other`.
         Usado pelo Python quando escrevemos Fraction == Fraction ou
                                             Fraction == int
         """
+        
         if type(other) is int:
             return (self.num/self.den) == other
         else :
@@ -311,12 +326,12 @@ class Fraction:
 
     #-------------------------------------
     def __req__(self, other):
-        """ (Fraction, int) -> Fraction
+        """ (Fraction, int) -> True ou False
 
         Retorna a comparação do int `other` com a Fraction `self`.
-        Usado pelo Python quando escrevemos int / Fraction
+        Usado pelo Python quando escrevemos int == Fraction
         """
-        return self + other
+        return self == other
 
 ## =============================================================
 #  fim da definição de todas as funções e classes
