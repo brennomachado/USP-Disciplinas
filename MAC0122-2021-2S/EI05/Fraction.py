@@ -396,7 +396,7 @@ class Fraction:
 
     #-------------------------------------
     def __eq__(self, other):
-        """ (Fraction, Fraction ou int) -> True ou False
+        """ (Fraction, Fraction ou int) -> bool
 
         Retorna a comparação da Fraction `self` com a Fraction ou int `other`.
         Usado pelo Python quando escrevemos Fraction == Fraction ou
@@ -410,7 +410,7 @@ class Fraction:
 
     #-------------------------------------
     def __req__(self, other):
-        """ (Fraction, int) -> True ou False
+        """ (Fraction, int) -> bool
 
         Retorna a comparação do int `other` com a Fraction `self`.
         Usado pelo Python quando escrevemos int == Fraction
@@ -419,7 +419,7 @@ class Fraction:
 
     #-------------------------------------
     def __gt__(self, other):
-        """ (Fraction, Fraction ou int) -> True ou False
+        """ (Fraction, Fraction ou int) -> bool
 
         Retorna a comparação de > da Fraction `self` com a Fraction ou int `other`.
         Usado pelo Python quando escrevemos Fraction > Fraction ou
@@ -432,7 +432,7 @@ class Fraction:
             return self.num*other.den > self.den*other.num
 
     def __lt__(self, other): # Funcionaria como o __rgt__ especificado no enunciado
-        """ (Fraction, Fraction ou int) -> True ou False
+        """ (Fraction, Fraction ou int) -> bool
 
         Retorna a comparação de < da Fraction `self` com a Fraction ou int `other`.
         Usado pelo Python quando escrevemos Fraction < Fraction ou
@@ -446,7 +446,7 @@ class Fraction:
 
     #-------------------------------------
     def __le__(self, other):
-        """ (Fraction, Fraction ou int) -> True ou False
+        """ (Fraction, Fraction ou int) -> bool
 
         Retorna a comparação de <= da Fraction `self` com a Fraction ou int `other`.
         Usado pelo Python quando escrevemos Fraction <= Fraction ou
@@ -460,7 +460,7 @@ class Fraction:
 
     #-------------------------------------
     def __ge__(self, other): # Funcionaria como o __rle__ especificado no enunciado
-        """ (Fraction, Fraction ou int) -> True ou False
+        """ (Fraction, Fraction ou int) -> bool
 
         Retorna a comparação de >= da Fraction `self` com a Fraction ou int `other`.
         Usado pelo Python quando escrevemos Fraction >= Fraction ou
