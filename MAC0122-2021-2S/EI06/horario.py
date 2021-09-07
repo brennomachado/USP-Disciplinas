@@ -35,7 +35,7 @@
 '''
 
 def main():
- 
+    
     t1 = Horario(8,0,0)
     print(f't1 = {t1} e deve ser 08:00:00')
 
@@ -109,6 +109,9 @@ class Horario:
         valores correspondentes a horas, minutos e segundos, 
         respectivamente, no formato inteiro: [0,24[ , [0,60[ , [0,60[
         '''
+
+        if seg < 0 or min < 0 or hora < 0:
+            return 0, 0, 0
 
         if seg >= 60:
             min += seg//60
