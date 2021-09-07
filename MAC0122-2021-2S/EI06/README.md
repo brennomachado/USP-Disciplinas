@@ -87,14 +87,14 @@ Você pode estender esses comportamentos, desde que sejam consistentes e não al
 
 Leia o(s) texto(s) sugeridos na seção Estudo premilinar.
 
-    Baixe o arquivo horario.py.
-    Carregue esse arquivo usando o Spyder ou Colab.
-    Leia o cabeçalho do arquivo horario.py com atenção e edite o cabeçalho colocando seu nome e NUSP.
-    Estude o enunciado e os exemplos fornecidos para identificar os métodos que você deseja (ou precisa).
-    Documente seu trabalho descrevendo cada método.
-    Implemente e teste cada método.
-    Caso você deseje utilizar a função main(), não se esqueça de incluir o “if _ _ name _ _ …” no final do arquivo.
-    Submeta apenas o arquivo horario.py.
+- Baixe o arquivo horario.py.
+- Carregue esse arquivo usando o Spyder ou Colab.
+- Leia o cabeçalho do arquivo horario.py com atenção e edite o cabeçalho colocando seu nome e NUSP.
+- Estude o enunciado e os exemplos fornecidos para identificar os métodos que você deseja (ou precisa).
+- Documente seu trabalho descrevendo cada método.
+- Implemente e teste cada método.
+- Caso você deseje utilizar a função main(), não se esqueça de incluir o “if _ _ name _ _ …” no final do arquivo.
+- Submeta apenas o arquivo horario.py.
 
 ## Honestidade acadêmica
 
@@ -102,10 +102,10 @@ Esse é um exercício individual, não em grupo. Isso não significa que você n
 
 De forma sucinta, evite as seguintes ações que caracterizam desonestidade acadêmica na realização dos trabalhos individuais desse curso:
 
-    buscar e obter uma solução (parcial ou completa, correta ou não) de exercício programa (EP) na internet ou qualquer outro meio físico ou virtual, durante o período de submissão do referido EP;
-    solicitar ou obter uma cópia (parcial ou completa, correta ou não) da solução de um EP durante o seu período de submissão;
-    permitir que um colega acesse uma cópia (parcial ou completa, correta ou não) do seu EP, durante o período de submissão;
-    ainda mais grave é o plágio, que se configura pela utilização de qualquer material não visto em aula ou não descrito no enunciado, que não seja de sua autoria, em parte ou ao todo, e entregar, com ou sem edição, como se fosse seu trabalho, para ser avaliado.
+- buscar e obter uma solução (parcial ou completa, correta ou não) de exercício programa (EP) na internet ou qualquer outro meio físico ou virtual, durante o período de submissão do referido EP;
+- solicitar ou obter uma cópia (parcial ou completa, correta ou não) da solução de um EP durante o seu período de submissão;
+- permitir que um colega acesse uma cópia (parcial ou completa, correta ou não) do seu EP, durante o período de submissão;
+- ainda mais grave é o plágio, que se configura pela utilização de qualquer material não visto em aula ou não descrito no enunciado, que não seja de sua autoria, em parte ou ao todo, e entregar, com ou sem edição, como se fosse seu trabalho, para ser avaliado.
 
 ## Arquivos requeridos
 ### horario.py
