@@ -45,6 +45,7 @@ def main():
     print("###                TESTES DA CLASSE FRACTION                ###")
     print("###############################################################\n")
 
+    print(f"teste LE: {Fraction(1,2) <= Fraction(1,2)}")
     ## Testes propostos pelo enunciado
     print("## TESTES DO ENUNCIADO do EI-4 ##\n")
 
@@ -456,7 +457,7 @@ class Fraction:
         if type(other) is int:
             return self.num < self.den*other or self.num == self.den*other
         else :
-            return self.num*other.den < self.den*other.num or self.num == self.den*other.num
+            return self.num*other.den < self.den*other.num or self.num*other.den == self.den*other.num
 
     #-------------------------------------
     def __ge__(self, other): # Funcionaria como o __rle__ especificado no enunciado
