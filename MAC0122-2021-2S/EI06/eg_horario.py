@@ -6,8 +6,12 @@
 
 '''
 
-    Nome: Brenno Pereira Machado
-    NUSP: 6434401
+    GRUPO: 14
+    Nomes:
+        - Lucas Panfilo Donaire
+        - Melissa Tiemi Tanaka
+        - Samer Fauze Mahmoud
+        - Brenno Pereira Machado
 
     Ao preencher esse cabeçalho com o meu nome e o meu número USP,
     declaro que todas as partes originais desse exercício programa
@@ -35,16 +39,6 @@
 '''
 
 def main():
-    print("Executando a main() no arquivo horario.py")
-
-    print("Teste da classe Horario")
-    t0 = Horario()      ### 
-    print("t0 = ", t0)
-
-    print(f"__name__ dentro do arquivo horario.py = {__name__}")
-    print("Fim da main() no arquivo horario.py")
-
-def main_velha():
     
     t1 = Horario(8,0,0)
     print(f't1 = {t1} e deve ser 08:00:00')
@@ -151,22 +145,12 @@ class Horario:
         Retorna 00:00:00 se o valor da substração for < 0
         '''
 
-        min, hora = 0, 0
+        seg = self.transforma_em_segundos() - other.transforma_em_segundos()
 
-        seg = self.dados[0] - other.dados[0]
         if seg < 0:
-            seg = 60 + seg
-            min -= 1
-        min += self.dados[1] - other.dados[1]
-        if min < 0:
-            min = 60 + min
-            hora -= 1
-        hora += self.dados[2] - other.dados[2]
-        
-        if hora < 0:
             return Horario()
         else:
-            return Horario(hora, min, seg)
+            return Horario(0, 0, seg)
 
     def transforma_em_segundos(self):
         '''(Horario) -> int
@@ -224,4 +208,4 @@ class Horario:
 
 
 if __name__ == "__main__":
-    main_velha()
+    main()
