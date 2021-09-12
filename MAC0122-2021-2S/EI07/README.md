@@ -33,9 +33,9 @@ são feitas em uma mesma extremidade chamada de topo da pilha, como ilustrado ab
 ```
 ## Estudos preliminares
 
-    O que é uma Pilha?
-    O tipo abstrato de dados Pilha
-    Implementando uma Pilha em Python
+- O que é uma Pilha?
+- O tipo abstrato de dados Pilha
+- Implementando uma Pilha em Python
 
 ## O que você deve fazer
 
@@ -44,7 +44,7 @@ Implemente a classe Pilha que tem comportamento muito parecido com a classe Stac
 Sua classe Pilha deve possuir um atributo de nome dados. Esse atributo dados deve ser uma lista que armazena os itens da pilha.
 Comportamentos que você deve implementar na classe Pilha
 
-#### <span style="color:green">Os comportamentos que você deve implementar na classe Pilha são ilustrados pela seguinte função testes():</span>
+### <span style="color:green">Os comportamentos que você deve implementar na classe Pilha são ilustrados pela seguinte função testes():</span>
 
 ```
 def testes():
@@ -69,7 +69,7 @@ def testes():
 ```
 Você pode estender esses comportamentos, desde que sejam consistentes e não alterem os resultados como ilustrados nos exemplos de testes da main().
 
-#### <span style="color:green">Função</span> palindromo()
+### <span style="color:green">Função</span> palindromo()
 
 Palíndromo é uma palavra, frase ou número que permanece igual quando lida de trás para diante. Por extensão, palíndromo é qualquer série de elementos com simetria linear, ou seja, que apresenta a mesma sequência de unidades nos dois sentidos Wikipedia.
 
