@@ -6,8 +6,8 @@
 
 '''
 
-    Nome:
-    NUSP:
+    Nome: Brenno Pereira Machado
+    NUSP: 6434401
 
     Ao preencher esse cabeçalho com o meu nome e o meu número USP,
     declaro que todas as partes originais desse exercício programa
@@ -41,8 +41,25 @@ def main():
     ''' função para teste da função bem_formada
     '''
 
-    print("Vixe, ainda não fiz nenhum teste!")
+    print("\n###############################################################")
+    print("###              LISTA E SEQUÊNCIAS BEM FORMADAS            ###")
+    print("###   Esse programa usa uma lista como pilha para testar se ###")
+    print("###   uma expressão tem () [] \{\} de forma balanceada      ###")
+    print("###############################################################\n")
 
+    sequencias = ["", " ( { } )", " { } ( - ) [ { } ( ) ]", "(a + { b } )-{2 *[ 3+4 ]}", "{ ( { x } ) } [ y ]",\
+         "[", "( { ) }", "{ ( { } } )", "( ( ( . ) )", " ] ", "{ ( { x } } [ y ] )"]
+
+    for expressao in sequencias:
+        if bem_formada(expressao):
+            resultado = 'É'
+        else:
+            resultado = 'NÃO É'
+
+        expressao+="'"
+        print(f"'{expressao:30} {resultado:8} bem formada")
+
+    
 # ---------------------------------------------------------
 
 def bem_formada( seq ):
@@ -60,10 +77,36 @@ def bem_formada( seq ):
     False
     >>> bem_formada( " { ( { x } )  } [ y ]" )
     True
-    >>> bem_formada( " { ( { x }  } [ y ] )" )
+    >>> bem_formada( "    { ( { x }  } [ y ] )" )
     False
     '''
-    print("Vixe, ainda não fiz a função bem_formada!")
+
+    pilha = []
+    balanceada = True
+    i = 0
+    tam = len(seq)
+
+    while i < tam and balanceada:
+        caracter = seq[i]
+        if caracter in ABRE:
+            pilha.append(caracter)
+        elif caracter in FECHA and pilha == []:
+            balanceada = False
+        elif caracter in FECHA :
+            topo = pilha.pop()
+            if not (caracter == ")" and topo == "("  or
+                caracter == "]" and topo == "["  or
+                caracter == "}" and topo == "{") :
+                # Se uma das três operações "AND" for verdadeira.
+                #   OBS.: Substitui a função matches() da literatura dada
+                
+                balanceada = False
+        i = i+1
+
+    if balanceada and pilha == []:
+      return True
+    else:
+      return False
 
 # ---------------------------------------------------------
 
