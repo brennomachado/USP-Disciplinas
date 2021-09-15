@@ -44,7 +44,7 @@ def main():
     print("\n###############################################################")
     print("###              LISTA E SEQUÊNCIAS BEM FORMADAS            ###")
     print("###   Esse programa usa uma lista como pilha para testar se ###")
-    print("###   uma expressão tem () [] \{\} de forma balanceada      ###")
+    print("###   uma expressão tem () [] { } de forma balanceada       ###")
     print("###############################################################\n")
 
     sequencias = ["", " ( { } )", " { } ( - ) [ { } ( ) ]", "(a + { b } )-{2 *[ 3+4 ]}", "{ ( { x } ) } [ y ]",
