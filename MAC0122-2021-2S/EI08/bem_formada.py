@@ -97,8 +97,8 @@ def bem_formada( seq ):
             if not (caracter == ")" and topo == "("  or
                 caracter == "]" and topo == "["  or
                 caracter == "}" and topo == "{") :
-                # Se uma das três operações "AND" for verdadeira.
-                #   OBS.: Substitui a função matches() da literatura dada
+                # Se uma das três operações "AND" for verdadeira não entra no IF.
+                #   OBS.: Substitui a função matches() da literatura dada.
                 
                 balanceada = False
         i = i+1
