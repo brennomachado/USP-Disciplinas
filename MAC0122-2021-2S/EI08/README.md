@@ -23,7 +23,7 @@ Você deve estender a funcionalidade da função bem_formada() para verificar se
 - [ ]
 - { }
 
-Uma string desses símbolos é bem-formada se os símbolos são fechados na ordem inversa àquela em que foram abertos. Sua função deve ignorar caracteres diferentes de ‘ovo [ ] { }’ sem resultar em erro.
+Uma string desses símbolos é bem-formada se os símbolos são fechados na ordem inversa àquela em que foram abertos. Sua função deve ignorar caracteres diferentes de ‘( ) [ ] { }’ sem resultar em erro.
 
 Por exemplo, as seguintes sequências são bem formadas:
 
