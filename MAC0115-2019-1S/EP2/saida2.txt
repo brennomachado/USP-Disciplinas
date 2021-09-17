@@ -1,11 +1,0 @@
-Este programa determina o IMC - Índice de Massa Corporal.
-
-Digite o nome de uma pessoa: 
-Digite a idade (em anos): 
-Digite o peso (em quilogramas): 
-Digite a altura (em metros): 
-Maria Fernanda Albuquerque tem 51 anos e seu IMC é 18.084986262185254 
-
-Maria Fernanda Albuquerque está abaixo do peso normal? ( True )
-Maria Fernanda Albuquerque está acima do peso normal? ( False )
-Maria Fernanda Albuquerque está com o peso normal? ( False )

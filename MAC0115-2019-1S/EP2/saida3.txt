@@ -1,11 +1,0 @@
-Este programa determina o IMC - Índice de Massa Corporal.
-
-Digite o nome de uma pessoa: 
-Digite a idade (em anos): 
-Digite o peso (em quilogramas): 
-Digite a altura (em metros): 
-José dos Santos tem 45 anos e seu IMC é 30.408328826392644 
-
-José dos Santos está abaixo do peso normal? ( False )
-José dos Santos está acima do peso normal? ( True )
-José dos Santos está com o peso normal? ( False )

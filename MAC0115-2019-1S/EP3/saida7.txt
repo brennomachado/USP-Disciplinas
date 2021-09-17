@@ -1,6 +1,0 @@
-Este programa recebe uma data e imprime o dia da semana e o calendário do mês.
-
-Digite um dia (inteiro entre 1 e 31): 
-Digite um mês (inteiro entre 1 e 12): 
-Digite um ano (inteiro >= 1600): 
-Data fornecida tem o dia inválido.

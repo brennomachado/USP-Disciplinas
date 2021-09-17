@@ -1,11 +1,0 @@
-Este programa determina o IMC - Índice de Massa Corporal.
-
-Digite o nome de uma pessoa: 
-Digite a idade (em anos): 
-Digite o peso (em quilogramas): 
-Digite a altura (em metros): 
-João da Silva tem 30 anos e seu IMC é 21.947505150945084
-
-João da Silva está abaixo do peso normal? ( False )
-João da Silva está acima do peso normal? ( False )
-João da Silva está com o peso normal? ( True )
