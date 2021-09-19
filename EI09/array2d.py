@@ -6,8 +6,8 @@
 
 '''
 
-    Nome:
-    NUSP:
+    Nome: Brenno Pereira Machado
+    NUSP: 6434401
 
     Ao preencher esse cabeçalho com o meu nome e o meu número USP,
     declaro que todas as partes originais desse exercício programa
@@ -40,6 +40,28 @@ def main():
 
     print("Testes da classe Array2d\n")
 
+    a = Array2d( (2,3), 3) # cria Array2d com valor inicial 3
+    print(f'teste 1: Criação do Array2d a:')
+    print(a)
+    print(f'shape: {a.shape}')
+    print(f'size : {a.size}')
+    print(f'data : {a.data}')
+    print()
+
+    b = Array2d( (2,3), 1.7)   # criar Array2d com valor inicial 7
+    print(f'teste 2: Criação do Array2d b:')
+    print(b)
+    print(f'shape: {b.shape}')
+    print(f'size : {b.size}')
+    print(f'data : {b.data}')
+    print()
+
+    print(f'teste 3: a[0,1] + 100 é: {a[0,1] + 100}') # acesso direto usando tupla: use o método __getitem__
+    print()
+
+    a[1,1] = -1    # atribuição usando tupla: use o método __setitem__
+    print(f'teste 4: Array2d a:')
+    print(a)
 
 ## ==================================================================
 #   A classe Array2d permite a manipulação de 'matrizes' de duas 
@@ -58,7 +80,10 @@ class Array2d:
         shape: tupla que armazena as dimensões da matriz
         size : número total de elementos da matriz
         '''
-        print("Vixe! ainda não fiz o construtor da classe.")
+         
+        self.shape = shape
+        self.size = shape[0]*shape[1]
+        self.data = self.size*[val]
 
     # ---------------------------------------------------------------
     def __getitem__(self, key):
@@ -75,7 +100,9 @@ class Array2d:
         >>> print( a[1,1] )
         -1
         '''
-        print("Vixe! ainda não fiz o método __getitem__.")
+
+        lin, col = key
+        return self.data[ self.shape[1]*lin + col]
 
     # ---------------------------------------------------------------
     def __setitem__(self, key, valor):
@@ -94,11 +121,13 @@ class Array2d:
         >>> print( a[1,1] )
         100
         '''
-        print("Vixe! ainda não fiz o método __setitem__.")
+
+        lin, col = key
+        self.data[ self.shape[1]*lin + col] = valor
 
     # ---------------------------------------------------------------
     def __str__(self):
-        ''' (Array2d) -> None
+        ''' (Array2d) -> str
         ao ser usada pela função print, deve exibir cada linha
         do Array2d em uma linha separada, separando seus elementos por um espaço.
 
@@ -108,7 +137,16 @@ class Array2d:
         e, caso self.shape = (3,2) o método deve retornar a string
         "1 2\n3 4\n5 6" 
         '''
-        print("Vixe! ainda não fiz o método __str__.")
+        i = 0
+        array = ""
+        for elemento in self.data:
+            i += 1
+            array += str(elemento) + " "
+            if i == self.shape[1]:
+                array = array[:-1] + "\n"
+                i = 0
+
+        return array[:-1]
 
     # ---------------------------------------------------------------
     # Escreva outros métodos e funções caso desejar
