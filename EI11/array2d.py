@@ -36,9 +36,6 @@
 
 ## ==================================================================
 
-from numpy import array
-
-
 def main():
     ''' função main() para teste da classe Array2d
     '''
