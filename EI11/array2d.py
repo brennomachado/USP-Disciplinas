@@ -96,12 +96,12 @@ def matmul(esq, dir):
     Recebe dois objetos da classe Array2d e retorna a multiplicação
     matricial ('esq'*'dir')
     '''
+    
     resultado = []
     for i in range(esq.shape[0]):
         linha = esq.getlin(i)
         for j in range(dir.shape[1]):
-            coluna = dir.getcol(j)
-            resultado.append(linha.dot(coluna))
+            resultado.append(linha.dot(dir.getcol(j)))
 
     array_resultado = Array2d((esq.shape[0], dir.shape[1]), None)
     array_resultado.carregue(resultado)
