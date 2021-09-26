@@ -101,7 +101,7 @@ def matmul(esq, dir):
         linha = esq.getlin(i)
         for j in range(dir.shape[1]):
             coluna = dir.getcol(j)
-            resultado.append(sum([a * b for a, b in zip(linha.data, coluna.data)]))
+            resultado.append(linha.dot(coluna))
 
     array_resultado = Array2d((esq.shape[0], dir.shape[1]), None)
     array_resultado.carregue(resultado)
