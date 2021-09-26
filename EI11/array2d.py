@@ -6,8 +6,8 @@
 
 '''
 
-    Nome:
-    NUSP:
+    Nome: Brenno Pereira Machado
+    NUSP: 6434401
 
     Ao preencher esse cabeçalho com o meu nome e o meu número USP,
     declaro que todas as partes originais desse exercício programa
@@ -267,7 +267,7 @@ class Array2d:
         e, caso self.shape = (3,2) o método deve retornar a string
         "1 2\n3 4\n5 6" 
         '''
-        
+
         i = 0
         array = ""
         for elemento in self.data:
