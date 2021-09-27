@@ -98,10 +98,18 @@ def matmul(esq, dir):
     '''
     
     resultado = []
+    colunas = []
+    
+    # For para acessar/construir uma única vez as colunas para multiplicação.
+    # Melhora em até 2x a performance para numero alto de multiplicações com
+    # matrizes grandes, gastando um pouco mais de memória.
+    for j in range(dir.shape[1]):
+        colunas.append(dir.getcol(j))  
+    
     for i in range(esq.shape[0]):
         linha = esq.getlin(i)
         for j in range(dir.shape[1]):
-            resultado.append(linha.dot(dir.getcol(j)))
+            resultado.append(linha.dot(colunas[j]))
 
     array_resultado = Array2d((esq.shape[0], dir.shape[1]), None)
     array_resultado.carregue(resultado)
