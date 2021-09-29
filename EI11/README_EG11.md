@@ -38,9 +38,9 @@ Para que a leitura não se torne cansativa, procure ler apenas um item por vez e
     Inclua o comando if __name__ == '__main__': para chamar a função main() como ilustrado no último exercício em time.
 
 2. Correção e testes individuais
-  - Cada pessoa do time deve verificar, com a ajuda de seus colegas quando necessário, se seu programa EI/EG está dentro da especificação. Não hesite em pedir ajuda a seu time em caso de dificuldade.
-  - Cada pessoa do time deve testar sua classe usando a função main() com todos os testes e executar os testes e verificar se a classe passa em todos os testes.
-  - Caso algum problema seja encontrado, discuta como resolvê-los com seus colegas de time.
+     - Cada pessoa do time deve verificar, com a ajuda de seus colegas quando necessário, se seu programa EI/EG está dentro da especificação. Não hesite em pedir ajuda a seu time em caso de dificuldade.
+     - Cada pessoa do time deve testar sua classe usando a função main() com todos os testes e executar os testes e verificar se a classe passa em todos os testes.
+     - Caso algum problema seja encontrado, discuta como resolvê-los com seus colegas de time.
 
 3. Desafio 1: Escreva a função
     ```
