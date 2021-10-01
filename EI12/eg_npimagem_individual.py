@@ -54,31 +54,31 @@ import matplotlib.image as mpimg
 ## ------------------------------------------------------------------
 def main():
 
-    # lista = list(range(20))
-    # ar = np.array(lista).reshape(4,5)
-    # img1 = NPImagem( (0, 0), ar)  # 
-    # print(f"img1:\n{img1}")
-    # print(f"Shape de img1: {img1.shape}\n")
+    lista = list(range(20))
+    ar = np.array(lista).reshape(4,5)
+    img1 = NPImagem( (0, 0), ar)  # 
+    print(f"img1:\n{img1}")
+    print(f"Shape de img1: {img1.shape}\n")
 
-    # img2 = NPImagem( (4, 3), 100)
-    # print(f"img2:\n{img2}")
-    # print(f"Shape de img2: {img2.shape}\n")
+    img2 = NPImagem( (4, 3), 100)
+    print(f"img2:\n{img2}")
+    print(f"Shape de img2: {img2.shape}\n")
 
-    # img2[1,2] = -10
-    # print(f"img2[1,2]={img2[1,2]}")
-    # print(f"img2:\n{img2}\n")
+    img2[1,2] = -10
+    print(f"img2[1,2]={img2[1,2]}")
+    print(f"img2:\n{img2}\n")
 
-    # img3 = img2.crop() ## cria uma cópia
-    # print(f"img3:\n{img3}\n")
+    img3 = img2.crop() ## cria uma cópia
+    print(f"img3:\n{img3}\n")
 
-    # img4 = img1.crop(0, 1, 3, 4)  
-    # print(f"img4:\n{img4}\n")
+    img4 = img1.crop(0, 1, 3, 4)  
+    print(f"img4:\n{img4}\n")
 
-    # img5 = NPImagem( (3,2) )
-    # print(f"img5:\n{img5}\n")
+    img5 = NPImagem( (3,2) )
+    print(f"img5:\n{img5}\n")
 
-    # img6 = img1.crop(1,2)
-    # print(f"img6:\n{img6}\n")
+    img6 = img1.crop(1,2)
+    print(f"img6:\n{img6}\n")
 
 
     print("\n\n###### TESTES EG: PINTE #######\n")
@@ -157,10 +157,10 @@ class NPImagem:
 
         if type(val) is np.ndarray:
             self.data = val
-            self.shape = val.shape
         else:
             self.data = np.full(shape, val)
-            self.shape = shape
+        
+        self.shape = self.data.shape
     
     # ---------------------------------------------------------------
     def pinte_retangulo(self, sup, esq, inf, dir, v=0):
@@ -212,7 +212,6 @@ class NPImagem:
 
         self.data[sup:linha_final, esq:coluna_final] = other.data[l:l_final,c:c_final]
 
-
     # ---------------------------------------------------------------
     def __getitem__(self, key):
         ''' (NPImagem, tupla) -> self.data.dtype
@@ -220,8 +219,7 @@ class NPImagem:
         e retorna o item nessa posição em NPImagem.data[lin,col].
         '''
 
-        lin, col = key
-        return self.data[lin, col]
+        return self.data[key]
 
     # ---------------------------------------------------------------
     def __setitem__(self, key, valor):
@@ -230,8 +228,7 @@ class NPImagem:
         e um objeto valor e armazena o valor na posição self.data[lin,col].
         '''
 
-        lin, col = key
-        self.data[lin, col] = valor
+        self.data[key] = valor
 
     # ---------------------------------------------------------------
     def __str__(self):
