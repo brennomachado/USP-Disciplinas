@@ -11,3 +11,5 @@ EI09/desktop.ini
 EI10/desktop.ini
 EI11/desktop.ini
 desktop.ini
+*.ini
+**/desktop.ini
