@@ -164,20 +164,26 @@ class NPImagem:
     
     # ---------------------------------------------------------------
     def pinte_retangulo(self, sup, esq, inf, dir, v=0):
+        ''' (NPImagem, int, int, int, int, int) -> None 
+        Recebe 4 inteiros que definem o canto superior-esquerdo (sup, esq) e
+        o canto inferior-direito (inf,dir) de uma região retangular com 
+        relação a posição (0,0) de self, ou seja, os cantos são "deslocamentos" 
+        em pixeis com relação à origem.
+        Esse método pinta, com o valor v, os pixeis de self que tenham sobreposição com o retângulo (sup,esq)x(inf,dir). 
+        '''
+        self_nlins, self_ncols = self.shape
+        other_nlins, other_ncols = inf - sup, dir - esq
 
-      ''' (NPImagem, int, int, int, int, int) -> None 
-      Recebe 4 inteiros que definem o canto superior-esquerdo (sup, esq) e
-      o canto inferior-direito (inf,dir) de uma região retangular com 
-      relação a posição (0,0) de self, ou seja, os cantos são "deslocamentos" 
-      em pixeis com relação à origem.
-      Esse método pinta, com o valor v, os pixeis de self que tenham sobreposição com o retângulo (sup,esq)x(inf,dir). 
-      '''
-      sup = 0 if sup < 0 else sup
-      esq = 0 if esq < 0 else esq
-      inf = 0 if inf < 0 else inf
-      dir = 0 if dir < 0 else dir
+        if (sup >= self_nlins) or (esq >= self_ncols) or (inf <= 0) or (dir <= 0): return
+
+        
+        self_sup = max(sup, 0)
+        self_esq = max(esq, 0)
+
+        self_inf = min(sup + other_nlins, self_nlins)
+        self_dir = min(esq + other_ncols, self_ncols)
       
-      self.data[sup:inf, esq:dir] = v
+        self.data[self_sup:self_inf, self_esq:self_dir] = v
 
     # ---------------------------------------------------------------
     def paste(self, other, sup, esq):
