@@ -1,14 +1,13 @@
 # EI14
-Data de entrega: quinta, 14 out 2021, 08:00
+Data de entrega: quinta, 7 out 2021, 08:00
 Arquivos requeridos: recursao.py ( Baixar)
 Tipo de trabalho: Trabalho individual
 
-# Recursão
+## Recursão
 
 Vamos fazer uma pausa na descrição de tipos de dados abstratos para introduzir o conceito de recursão.
 
 Recursão é um método de solução de problemas que visa quebrar o problema em subproblemas menores, em geral fazendo a função chamar ela mesma, até alcançar um problema simples o bastante para ser resolvido trivialmente. O uso de algoritmos recursivos nos permite escrever soluções elegantes para problemas que, de outra forma, seriam muito difíceis de programar.
-
 
 ## Leituras preliminares
 
@@ -18,7 +17,8 @@ Recursão é um método de solução de problemas que visa quebrar o problema em
 
 Você deve escrever duas funções recursivas:
 
-- função somaR()
+  - função somaR()
+    
     ```
     def somaR( lista ):
         ''' (list) -> int
@@ -32,8 +32,6 @@ Você deve escrever duas funções recursivas:
             não use a função nativa sum() do Python para resolver esse exercício.
         '''
     ```
-    
-
 - função maxR()
     ```
     def maxR( lista ):
@@ -63,7 +61,7 @@ Leia o(s) texto(s) sugeridos na seção Leitura premilinar.
 
 ## Honestidade acadêmica
 
-Esse é um exercício individual, não em grupo. Isso não significa que você não pode receber ajuda de outras pessoas, inclusive de seus colegas. De uma forma geral, gostaríamos de incentivar as discussões de ideias, conceitos e alternativas de solução. Nossa maior recomendação é evitar olhar o código fonte de uma solução antes de escrever o seu programa. Em caso de dúvida, consulte a página [Sobre colaboração em MAC0122](https://edisciplinapil.usp.br/mod/page/view.php?id=3754863)
+Esse é um exercício individual, não em grupo. Isso não significa que você não pode receber ajuda de outras pessoas, inclusive de seus colegas. De uma forma geral, gostaríamos de incentivar as discussões de ideias, conceitos e alternativas de solução. Nossa maior recomendação é evitar olhar o código fonte de uma solução antes de escrever o seu programa. Em caso de dúvida, consulte a página Sobre colaboração em MAC0122
 
 De forma sucinta, evite as seguintes ações que caracterizam desonestidade acadêmica na realização dos trabalhos individuais desse curso:
 
@@ -74,7 +72,6 @@ De forma sucinta, evite as seguintes ações que caracterizam desonestidade acad
 
 ## Arquivos requeridos
 #### recursao.py
-
 ```
 # -*- coding: utf-8 -*-
 
@@ -155,4 +152,3 @@ def somaR( lista ):
 if __name__ == '__main__':
     main()
 ```
-
