@@ -33,7 +33,6 @@
     - LISTA das pessoas que me auxiliaram a fazer esse trabalho
         - 
 '''
-
 ## ==================================================================
 
 def main():
@@ -59,10 +58,6 @@ def fibonacciR(n):
     elif n == 1: return 1
     else:
         return fibonacciR(n-1) + fibonacciR(n-2)
-
-    
-
-    
 
 ## ==================================================================
 
