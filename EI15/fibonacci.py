@@ -36,8 +36,9 @@
 ## ==================================================================
 
 def main():
-    for i in range(0,41,5):
-        print(f"FibonacciR({i}) e FibonacciI({i}) = {fibonacciR(i)} - {fibonacciI(i)}")
+    
+    for i in [5,10,20,30,40]:
+        print(f"FibonacciR({i}) = {fibonacciR(i)}\nFibonacciI({i}) = {fibonacciI(i)}\n")
 
 def fibonacciR(n):
     '''(int) -> int
