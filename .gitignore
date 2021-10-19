@@ -13,3 +13,5 @@ EI11/desktop.ini
 desktop.ini
 *.ini
 **/desktop.ini
+EI15/__pycache__/eg_fibonacci.cpython-39.pyc
+EI15/__pycache__/fibonacci_eficiente.cpython-39.pyc
