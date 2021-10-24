@@ -6,8 +6,8 @@
 
 '''
 
-    Nome:
-    NUSP:
+    Nome: Brenno Pereira Machado
+    NUSP: 6434401
 
     Ao preencher esse cabeçalho com o meu nome e o meu número USP,
     declaro que todas as partes originais desse exercício programa
@@ -38,6 +38,32 @@ import numpy as np
 
 ## ==================================================================
 
+def main ():
+    x = [    
+            1, 8, 7, 6, 1, 4,
+            1, 8, 1, 1, 1, 3,
+            1, 0, 2, 1, 2, 8,
+            1, 1, 1, 1, 0, 3,
+            5, 9, 1, 0, 1, 1,
+            9, 9, 9, 0, 1, 0
+        ]
+
+    img = np.array(x).reshape(6,6)
+    print(f'Imagem\n', img)
+    
+    sementes = [(0,0), (5,4)]
+
+    nova_cor = -1
+    for s in sementes:
+        res = segmente_blob(img, s)
+        print(f'\nSegmentei {len(res)} pixels a partir de {s}')
+        print( res )
+
+        pinte_blob(img, res, nova_cor)
+        print(f'\nimagem pintada')
+        print(img)
+        nova_cor -= 1
+
 def segmente_blob( img, semente ):
     ''' (ndarray, tuple) -> set
 
@@ -63,8 +89,33 @@ def segmente_blob_RM( img, semente, visitados ):
         - marca a semente como visitada e
         - propaga recursivamente para os vizinhos de mesma cor.
     '''
+    if semente in visitados:
+        return None
+    else:
+        visitados.add(semente)
 
-    print("Vixe! Ainda não fiz a função semente_blob_RM.")
+        # Guardando as coordernadas de possíveis novos vizinhos
+        semente_cima = (semente[0]-1, semente[1])
+        semente_baixo = (semente[0]+1, semente[1])
+        semente_direita = (semente[0], semente[1]+1)
+        semente_esquerda = (semente[0], semente[1]-1)
+
+        # Sequência de if que verificam se a coordenada é válida na imagem e
+        # se vizinho é da mesma cor antes de fazer chamadas recursivas
+        if semente_cima[0] > -1:
+            if img[semente] == img[semente_cima]:
+                segmente_blob_RM( img, semente_cima, visitados)
+        if semente_baixo[0] < img.shape[0]:
+            if img[semente] == img[semente_baixo]:
+                segmente_blob_RM( img, semente_baixo, visitados)
+        if semente_direita[1] < img.shape[1]:
+            if img[semente] == img[semente_direita]:
+                segmente_blob_RM( img, semente_direita, visitados)
+        if semente_esquerda[1] > -1:
+            if img[semente] == img[semente_esquerda]:
+                segmente_blob_RM( img, semente_esquerda, visitados)
+
+    return visitados
 
 ## ==================================================================
 
@@ -75,9 +126,11 @@ def pinte_blob( img, blob, nova_cor = 0):
     e pinta esses pixels com a nova_cor.
 
     '''
+    for elemento in blob:
+        img[elemento] = nova_cor
 
-    print("Vixe! Ainda não fiz a função pinte_blob.")
 
 ## ==================================================================
-## Coloque aqui outras funções que desejar
 
+if __name__ == '__main__':
+    main()
