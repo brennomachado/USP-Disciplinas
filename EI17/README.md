@@ -1,7 +1,7 @@
 # EI17
 Data de entrega: segunda, 25 out 2021, 22:00
 Arquivos requeridos: blobs.py ( [Baixar](https://edisciplinas.usp.br/mod/vpl/views/downloadrequiredfiles.php?id=3942004))
-Tipo setTipo de trabalho: Trabalho individual
+Tipo de trabalho: Trabalho individual
 ## Processamento de Imagens Digitais: segmentação de blobs
 
 ``All colors will agree in the dark.’’,
