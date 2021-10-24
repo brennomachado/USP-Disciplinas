@@ -1,49 +1,51 @@
 # EI17
 Data de entrega: segunda, 25 out 2021, 22:00
-Arquivos requeridos: blobs.py ( Baixar)
-Tipo de trabalho: Trabalho individual
+Arquivos requeridos: blobs.py ( [Baixar](https://edisciplinas.usp.br/mod/vpl/views/downloadrequiredfiles.php?id=3942004))
+Tipo setTipo de trabalho: Trabalho individual
 ## Processamento de Imagens Digitais: segmentação de blobs
 
 ``All colors will agree in the dark.’’,
-Francis Bacon.
-#### Objetivos
+[Francis Bacon](https://en.wikipedia.org/wiki/Francis_Bacon).
+
+### Objetivos
 
 Neste exercício vamos retomar o tópico de processamento de imagens para desenvolver um algoritmo recursivo para a segmentação de blobs (regiões conexas) de uma imagem. Por simplicidade, vamos trabalhar diretamente sobre arrays do Numpy.
 
 --- 
 
-#### O que é uma blob (região conexa)?
+### O que é uma blob (região conexa)?
 
 Vamos considerar uma blob como sendo uma região conexa (agrupamento) de pixels de mesma cor com conectividade de 4, isto é, considerando os vizinhos superiores, inferiores e laterais (iremos desconsiderar os vizinhos nas diagonais que aumentaria a conectividade para 8 vizinhos).
 
 Vamos representar uma blob por meio de um conjunto (set) de tuplas, onde as tuplas contém coordenadas de pixeis que estão contidos na blob.
 
 É interessante observar que uma imagem é, em geral, constituída por várias blobs. O exemplo abaixo ilustra esse caso.
-##### Exemplo
+#### Exemplo
 
 Considere a imagem de níveis de cinza abaixo:
-
+```
 linha 0 |  1 8 7 6 2 4
 linha 1 |  1 8 1 1 1 3
 linha 2 |  1 0 2 1 2 8
 linha 3 |  1 1 1 1 0 3
 linha 4 |  5 9 1 0 1 1
 linha 5 |  9 9 9 0 1 0
+```
 
 A blob segmentada usando como semente a origem (0, 0), corresponde aos pixels com valor 1 e conectividade 4 a partir de (0,0), como ilustrado abaixo:
-
+```
 linha 0 |  1 - - - - -    
 linha 1 |  1 - 1 1 1 -    
 linha 2 |  1 - - 1 - -    
 linha 3 |  1 1 1 1 - -    
 linha 4 |  - - 1 - - -    
 linha 5 |  - - - - - -    
-
+```
 Podemos representar essa região como o seguinte conjunto de tuplas:
 
 blob1 = {(0, 0), (1, 0), (2, 0), (3, 0), (3, 1), (3, 2), (3, 3), (4, 2), (2, 3), (1, 3), (1, 2), (1, 4)}
 
-#### Tipo set
+### Tipo set
 
 Vamos utilizar o tipo set do Python para representar uma blob. O comportamento básico de objeto do tipo set é ilustrado pelo trecho de código abaixo.
 ```
@@ -98,19 +100,19 @@ Baixe e execute esse programa para entender o comportamento de objetos do tipo s
 Observe que não há uma ordem definida entre os elementos em um conjunto. Também não há repetição de elementos. Portanto, permutações desses elementos implicam no mesmo conjunto. Sendo assim, nesse exercício, se você escolher inicialmente qualquer coordenada da blob como semente, a blob resultante será a mesma (mesmo conjunto).
 
 Observe que a cor 1 está presente em duas regiões conexas distintas. Além da região descrita pela blob1, existe também uma segunda região definida por:
-
+```
 linha 0 |  - - - - - -
 linha 1 |  - - - - - -
 linha 2 |  - - - - - -
 linha 3 |  - - - - - -
 linha 4 |  - - - - 1 1
 linha 5 |  - - - - 1 -
-
+```
 blob2 = { (4, 4), (4, 5), (5, 4) }
 
 --- 
 
-#### Detalhes sobre a implementação
+### Detalhes sobre a implementação
 
 Como visto acima, uma blob deve ser representada como um conjunto de coordenadas.
 
@@ -179,7 +181,7 @@ imagem pintada
 
 ---
 
-#### Roteiro
+### Roteiro
 
 - Baixe o arquivo blobs.py para uma pasta do seu computador.
 - Carregue esse arquivo usando o Spyder ou Colab.
@@ -189,7 +191,7 @@ imagem pintada
 - Caso você deseje testar sua classe no próprio arquivo, não se esqueça de incluir o “if _ _ name _ _ …” no final do arquivo.
 - Submeta apenas o arquivo blobs.py.
 
-#### Honestidade acadêmica
+### Honestidade acadêmica
 
 Esse é um exercício individual, não em grupo. Isso não significa que você não pode receber ajuda de outras pessoas, inclusive de seus colegas. De uma forma geral, gostaríamos de incentivar as discussões de ideias, conceitos e alternativas de solução. Nossa maior recomendação é evitar olhar o código fonte de uma solução antes de escrever o seu programa. Em caso de dúvida, consulte a página Sobre colaboração em MAC0122
 
@@ -200,8 +202,8 @@ De forma sucinta, evite as seguintes ações que caracterizam desonestidade acad
 - permitir que um colega acesse uma cópia (parcial ou completa, correta ou não) do seu EP, durante o período de submissão;
 - ainda mais grave é o plágio, que se configura pela utilização de qualquer material não visto em aula ou não descrito no enunciado, que não seja de sua autoria, em parte ou ao todo, e entregar, com ou sem edição, como se fosse seu trabalho, para ser avaliado.
 
-#### Arquivos requeridos
-##### blobs.py
+### Arquivos requeridos
+#### blobs.py
 
 ```
 # -*- coding: utf-8 -*-
