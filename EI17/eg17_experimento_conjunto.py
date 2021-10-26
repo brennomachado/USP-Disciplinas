@@ -54,7 +54,7 @@ NUMERO_DE_ITERACOES = 7  # cada iteração dobra o valor de N
 
 ## Avaliação em pares
 ## insira/remova/edite os pares de funções na lista para serem avaliadas
-PARES_DE_FUNCOES = [[segmente_blob, segmente_blob_array]]
+PARES_DE_FUNCOES = [[segmente_blob, segmente_blob_list],[segmente_blob, segmente_blob_array]]
 
 ################################################################
 #
