@@ -1,6 +1,6 @@
 # EI18
 Data de entrega: quinta, 28 out 2021, 08:00
-Arquivos requeridos: blobs.py ( Baixar)
+Arquivos requeridos: blobs.py ([Baixar](https://edisciplinas.usp.br/mod/vpl/views/downloadrequiredfiles.php?id=3943258))
 Tipo de trabalho: Trabalho individual
 
 ## Processamento de Imagens Digitais: lista com todos os blobs
