@@ -4,11 +4,10 @@ Arquivos requeridos: blobs.py ( Baixar)
 Tipo de trabalho: Trabalho individual
 
 ## Processamento de Imagens Digitais: lista com todos os blobs
-``All colors will agree in the dark.’’,
-Francis Bacon.
+``All colors will agree in the dark.,
+Francis Bacon.``
 
 ### Objetivos
-
 Neste exercício vamos continuar o tópico de segmentação de blobs (regiões conexas) de uma imagem. Para facilitar a manipulação de blobs, vamos agora colocar tudo dentro de uma classe Blobs.
 ---
 ### O que você deve fazer
