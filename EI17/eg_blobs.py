@@ -26,13 +26,13 @@ Original file is located at
     GRUPO: 13
 
     Nome: Brenno Pereira Machado
-    NUSP: 6434401
+    NUSP: -
 
     Nome: Felipe Sousa dos Santos
-    USP: 12567141
+    USP: -
 
     Nome: Mateus Jesus de Arruda Campos
-    USP: 12558697
+    USP: -
 
     Ao preencher esse cabeçalho com o meu nome e o meu número USP,
     declaro que todas as partes originais desse exercício programa

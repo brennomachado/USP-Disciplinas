@@ -7,13 +7,13 @@
 '''
 
     Nome: Brenno Pereira Machado
-    NUSP: 6434401
+    NUSP: -
 
     Nome: Bianca Sanches Portella
-    NUSP: 10296462
+    NUSP: -
 
     Nome: Vitor Neri Roque
-    NUSP: 12558099
+    NUSP: -
 
     Ao preencher esse cabeçalho com o meu nome e o meu número USP,
     declaro que todas as partes originais desse exercício programa

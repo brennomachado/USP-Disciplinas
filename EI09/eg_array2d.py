@@ -17,13 +17,13 @@ Original file is located at
     GRUPO: 5
 
     Nome: Brenno Pereira Machado
-    NUSP: 6434401
+    NUSP: -
 
     Nome: Bruno Kinsch de Lara Campos
-    NUSP: 12557376
+    NUSP: -
 
     Nome: Carlo Chede Broggi
-    NUSP: 10694000
+    NUSP: -
 
 
     Ao preencher esse cabeçalho com o meu nome e o meu número USP,

@@ -16,13 +16,13 @@ Original file is located at
 '''
 
     Nome: Brenno Pereira Machado
-    NUSP: 6434401
+    NUSP: -
 
     Nome: Mathuzalem Ferreira de Lima
-    NUSP: 12689189
+    NUSP: -
 
     Nome: Sávio Campos de Souza
-    NUSP: 8871528
+    NUSP: -
 
     Ao preencher esse cabeçalho com o meu nome e o meu número USP,
     declaro que todas as partes originais desse exercício programa

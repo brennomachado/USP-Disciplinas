@@ -11,13 +11,13 @@ Original file is located at
 Experimento EG13
 
 Nome: Brenno Pereira Machado
-NUSP: 6434401
+NUSP: -
 
 Nome: Juan German Cornelio Palma
-NUSP: 11809256
+NUSP: -
 
 Nome: Rafael Lopes Costa Alves Pinto
-NUSP: 11913638
+NUSP: -
 
 Qual a relação de desempenho entre as versões 
 iterativa e vetorizada do método blend?

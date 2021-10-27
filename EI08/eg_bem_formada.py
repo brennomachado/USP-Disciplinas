@@ -16,16 +16,16 @@ Original file is located at
 '''
 
     Nome: Brenno Pereira Machado
-    NUSP: 6434401
+    NUSP: -
 
     Nome: Matheus Fogaça Cichocki
-    NUSP: 11809990
+    NUSP: -
 
     Nome: Haoyu Chen
-    NUSP: 12557122
+    NUSP: -
 
     Nome: Gabriel Augusto Martins
-    NUSP: 10801509
+    NUSP: -
 
     Ao preencher esse cabeçalho com o meu nome e o meu número USP,
     declaro que todas as partes originais desse exercício programa

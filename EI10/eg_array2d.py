@@ -17,13 +17,13 @@ Original file is located at
     GRUPO: 7
 
     Nome: Brenno Pereira Machado
-    NUSP: 6434401
+    NUSP: -
 
     Nome: Augusto Lima Jardim
-    NUSP: 11810918
+    NUSP: -
 
     Nome: Ygor Peniche Maldonado
-    NUSP: 10271558
+    NUSP: -
 
 
     Ao preencher esse cabeçalho com o meu nome e o meu número USP,

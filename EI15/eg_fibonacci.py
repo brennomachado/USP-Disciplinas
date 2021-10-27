@@ -16,13 +16,13 @@ Original file is located at
 '''
 
     Nome: Brenno Pereira Machado
-    NUSP: 6434401
+    NUSP: -
 
     Nome: Joao Victor Passos Goncalves
-    NUSP: 12557716
+    NUSP: -
 
     Nome: Marcio Martins Jacob
-    NUSP: 10801127
+    NUSP: -
 
     Ao preencher esse cabeçalho com o meu nome e o meu número USP,
     declaro que todas as partes originais desse exercício programa
