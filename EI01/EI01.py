@@ -13,7 +13,7 @@ Entendo que exercícios sem esse cabeçalho devem receber nota zero
 e, ainda assim, poderão ser punidos por desonestidade acadêmica.
 
 Nome do aluno: Brenno Pereira Machado
-Número USP: 6434401
+Número USP: -
 Curso: Licenciatura em Física
 Disciplina: MAC0122 - Princípios de Desenvolvimento de Algoritmos
 Exercício Individual: EI-01

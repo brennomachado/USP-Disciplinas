@@ -17,8 +17,8 @@ Original file is located at
 '''
 
     Nome: Brenno Pereira Machado 
-          Gabriela Berndt Penteado 9913679
-          Rodrigo Dobies Garcia 12556653
+          Gabriela Berndt Penteado
+          Rodrigo Dobies Garcia
     NUSP: 
 
     Ao preencher esse cabeçalho com o meu nome e o meu número USP,
