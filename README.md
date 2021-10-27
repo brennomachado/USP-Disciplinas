@@ -1,6 +1,5 @@
 ## Exercícios desenvolvidos para a disciplina 'MAC0122 - Princípios de Desenvolvimento de Algoritmos', da USP em 2021
 
-<br>
 ### Objetivos da disciplina
 
 - Estudo, através de exemplos, da correção, da análise de eficiência e do desenvolvimento de algoritmos e de suas estruturas de dados básicas.
