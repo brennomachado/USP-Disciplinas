@@ -17,7 +17,7 @@ Original file is located at
     GRUPO: 
 
     Nome: Brenno Pereira Machado
-    NUSP: 6434401
+    NUSP: -
 
     Nome: Marcio Martins Jacob
     NUSP: 
