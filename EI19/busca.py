@@ -7,7 +7,7 @@
 '''
 
     Nome: Brenno Pereira Machado
-    NUSP: 6434401
+    NUSP: 
 
     Ao preencher esse cabeçalho com o meu nome e o meu número USP,
     declaro que todas as partes originais desse exercício programa
