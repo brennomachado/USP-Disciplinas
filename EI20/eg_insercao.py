@@ -7,7 +7,7 @@
 '''
 
     Nome: Brenno Pereira Machado
-    NUSP: 6434401
+    NUSP: -
     ### Acabei fazendo sozinho pois não estava bem para fazer em grupo hoje.###
 
     Ao preencher esse cabeçalho com o meu nome e o meu número USP,
