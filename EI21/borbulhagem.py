@@ -149,6 +149,7 @@ def ordene_por_borbulhagem(seq):
     total_de_trocas = 0
     while True:
         trocas = borbulhe(seq,n)
+        n -= 1
         if trocas == 0:
             break
         else: 
