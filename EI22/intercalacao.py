@@ -83,6 +83,7 @@ def main():
 ## ------------------------------------------------------------------
 
 def intercale_seqs(seq1, seq2):
+    
     ''' (list, list) -> list
 
         Recebe seq1 e seq2, duas listas tal que:
