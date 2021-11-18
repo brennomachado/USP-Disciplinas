@@ -28,7 +28,7 @@
     listadas abaixo.
 
     - LISTA de fontes externas utilizadas (links ou referências como livros)
-        - 
+        - https://www.youtube.com/watch?v=wx5juM9bbFo
 
     - LISTA das pessoas que me auxiliaram a fazer esse trabalho
         - 
@@ -127,6 +127,8 @@ def pivote_seq(seq):
     return indice_inicio
     
     
+    ##vou fazer funcionar esse ainda...
+    ## tem casos que dá errado quando o pivo é o maior elemento.
     
     # indice_pivo = len(seq)-1
     # pivo = seq[indice_pivo]
@@ -148,7 +150,7 @@ def pivote_seq(seq):
     # seq[indice_maior], seq[indice_pivo] = seq[indice_pivo], seq[indice_maior]   
     
             
-    return indice_maior
+    # return indice_maior
         
             
         
