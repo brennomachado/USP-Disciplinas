@@ -35,8 +35,6 @@
 '''
 
 ## ==================================================================
-from numpy import ModuleDeprecationWarning
-
 
 def main():
     '''
