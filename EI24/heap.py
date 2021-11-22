@@ -28,13 +28,15 @@
     listadas abaixo.
 
     - LISTA de fontes externas utilizadas (links ou referências como livros)
-        - 
+        - https://www.youtube.com/watch?v=MtQL_ll5KhQ
 
     - LISTA das pessoas que me auxiliaram a fazer esse trabalho
         - 
 '''
 
 ## ==================================================================
+
+
 def main():
 
     print("Testes do EI24 - ordenação usando max heap")
@@ -98,43 +100,47 @@ class MaxHeap:
 
     def insira(self, item):
         ''' (MaxHeap, obj) -> None
-        Recebe um objeto item e o insere no heap.
+            Recebe um objeto item e o insere no heap.
 
-        Inicialmente, o item deve ser colocado no final da lista. 
-        Em seguida, enquanto o pai desse item for menor, o item
-        deve subir na árvore até sua posição correta. 
+            Inicialmente, o item deve ser colocado no final da lista. 
+            Em seguida, enquanto o pai desse item for menor, o item
+            deve subir na árvore até sua posição correta. 
 
-        Exemplo:
-        Caso self.data seja a lista [None], a inserção de 21 deve
-        rearranjar self.data para que se torne: [None, 21].
+            Exemplo:
+            Caso self.data seja a lista [None], a inserção de 21 deve
+            rearranjar self.data para que se torne: [None, 21].
 
-        Caso self.data seja a lista [None, 21], a inserção de 12 deve
-        rearranjar self.data para que se torne: [None, 21, 12].
-        
-        Caso self.data seja a lista [None, 21, 12] a inserção de 43 
-        deve rearranjar self.data para que se torne: [None, 43, 12, 21].
+            Caso self.data seja a lista [None, 21], a inserção de 12 deve
+            rearranjar self.data para que se torne: [None, 21, 12].
+            
+            Caso self.data seja a lista [None, 21, 12] a inserção de 43 
+            deve rearranjar self.data para que se torne: [None, 43, 12, 21].
 
-        Caso self.data seja a lista [None, 43, 12, 21] a inserção de 65
-        deve rearranjar self.data para que se torne: [None, 65, 43, 21, 12].
+            Caso self.data seja a lista [None, 43, 12, 21] a inserção de 65
+            deve rearranjar self.data para que se torne: [None, 65, 43, 21, 12].
 
-        Dica: desenhe as árvores binárias correspondentes.
-
+            Dica: desenhe as árvores binárias correspondentes.
         '''
-
-        # escreva sua solução
-
-
+        self.data.append(item)
+        i_filho = len(self.data) -1
+        i_pai = i_filho // 2
+        
+        while i_pai > 0:
+            if self.data[i_pai] < self.data[i_filho]:
+                self.data[i_pai], self.data[i_filho] = self.data[i_filho], self.data[i_pai]
+                i_filho = i_pai
+                i_pai = i_filho // 2
+            else: i_pai = 0
+    
     def construa(self, seq):
         ''' (MaxHeap, list) -> None
-        Recebe uma lista de números seq. 
-        Para cada item em seq, insere o item no heap
-        usando o método insira. Dessa forma, seq é
-        transformada em um max heap em self.data.
+            Recebe uma lista de números seq. 
+            Para cada item em seq, insere o item no heap
+            usando o método insira. Dessa forma, seq é
+            transformada em um max heap em self.data.
         '''
-
-        # escreva sua solução
-
-
+        for item in seq:
+            self.insira(item)
 
 if __name__ == '__main__':
     main()
