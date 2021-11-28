@@ -6,7 +6,7 @@
 
 '''
 
-    Nome: Brennp Pereira Machado
+    Nome: Brenno Pereira Machado
     NUSP: -
 
     Ao preencher esse cabeçalho com o meu nome e o meu número USP,
