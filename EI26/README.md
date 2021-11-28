@@ -14,7 +14,7 @@ Nessa atividade vamos estudar um problema relacionado à comparação de strings
 
 Encontrar uma Maior Subsequência Comum (LCS - longest common subsequence) entre duas strings é um problema clássico da ciência da computação e suas soluções formam a base de programas de comparação de dados como o diff, com aplicações em linguística computacional e bioinformática, dentre outras. Por exemplo, sequências de DNA podem ser representadas por sequências formadas pelas bases ‘ACGT’ (cada uma das 4 letras representa uma base: adenina, citosina, guanina e timina). O LCS pode ser usado para encontrar dois DNAs que possuem a maior subsequência de bases em comum, semelhante ao que o pessoal de MAC0110 fez nos EPs de alinhamentos globais ótimos no primeiro semestre.
 
-<div style="text-align: center; font-size: 12px; margin: 0 8% 0 8%;">
+<div align="center" style="font-size: 12px; margin: 0 8% 0 8%;">
   <img height="125" src="1.png">
   <br>
   Figura: Alinhamento entre duas sequências, produzido pelo programa <a href="https://pt.wikipedia.org/wiki/Clustal">ClustalW</a> entre duas proteínas <a href="https://pt.wikipedia.org/wiki/Dedo_de_zinco">dedo-de-zinco humanas</a> (human zinc finger proteins) identificadas por seus números de acesso no <a href="https://pt.wikipedia.org/wiki/GenBank">GenBank</a>.
