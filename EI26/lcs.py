@@ -35,7 +35,26 @@
 '''
 
 #------------------------------------------------------
+from numpy.core.numeric import indices
+
+
 def main():
+    
+    a = [ "abc", "abg", "bdf", "aeg", "acefg", "gef"]
+    
+    b = ["abcdefg", "abcdefg", "abcdefg", "abcdefg", "abcdefg", "abcdefg"]
+    
+    # a = [ "abc"]
+    
+    # b = ["abcdefg" ]
+    
+    for i in range(len(a)):
+        if subseq(a[i], b[i]):
+            print(f"{a[i]} é sub de {b[i]}\n")
+        else: print(f"{a[i]} NÃO É sub de {b[i]}\n")
+
+
+def main2():
     '''
     Testes para os algoritmos de LCS
 
@@ -71,34 +90,34 @@ def main():
     
     
     
-    print("--------------------------------\n")
+    # print("--------------------------------\n")
 
-    print("Exemplos de execuções de lcs_rec()")
-    print("----------------------------------")
-    print("teste 0:")
-    s = 'abracadabra'
-    t = 'yabbadabbadoo'
-    print(f"s={s}\nt={t}\nLCS(s,t)={lcs_rec(s,t)}\n-----")
-    print("teste 1:")
-    s = 'tagctgaatc'
-    t = 'tatactgcctt'
-    print(f"s={s}\nt={t}\nLCS(s,t)={lcs_rec(s,t)}\n-----")
-    print("teste 2:")
-    s = 'caattttataccgcagc'
-    t = 'gaataggtatcgcca'
-    print(f"s={s}\nt={t}\nLCS(s,t)={lcs_rec(s,t)}\n-----")
-    print("teste 3:")
-    s = 'taggcagggcacgccaccttatg'
-    t = 'tccgtttctaaaccatacaaacctcct'
-    print(f"s={s}\nt={t}\nLCS(s,t)={lcs_rec(s,t)}\n-----")
-    print("teste 4:")
-    s = 'gaaccgcaggaattttcgcttgatccaacgaacca'
-    t = 'ggtatacggggctttctagaccaaggaaaat'
-    print(f"s={s}\nt={t}\nLCS(s,t)={lcs_rec(s,t)}\n-----")
-    print("teste 5:")
-    s = 'tctgggaatgcggtctcgcttagctgcggggacgacgagcagtgaacgacgcttcccacgc'
-    t = 'ttatggctcactaccacggccaaagaggtagagcacattttctacccaggctgaggtgtcctcttaccttt'
-    print(f"s={s}\nt={t}\nLCS(s,t)={lcs_rec(s,t)}\n-----")
+    # print("Exemplos de execuções de lcs_rec()")
+    # print("----------------------------------")
+    # print("teste 0:")
+    # s = 'abracadabra'
+    # t = 'yabbadabbadoo'
+    # print(f"s={s}\nt={t}\nLCS(s,t)={lcs_rec(s,t)}\n-----")
+    # print("teste 1:")
+    # s = 'tagctgaatc'
+    # t = 'tatactgcctt'
+    # print(f"s={s}\nt={t}\nLCS(s,t)={lcs_rec(s,t)}\n-----")
+    # print("teste 2:")
+    # s = 'caattttataccgcagc'
+    # t = 'gaataggtatcgcca'
+    # print(f"s={s}\nt={t}\nLCS(s,t)={lcs_rec(s,t)}\n-----")
+    # print("teste 3:")
+    # s = 'taggcagggcacgccaccttatg'
+    # t = 'tccgtttctaaaccatacaaacctcct'
+    # print(f"s={s}\nt={t}\nLCS(s,t)={lcs_rec(s,t)}\n-----")
+    # print("teste 4:")
+    # s = 'gaaccgcaggaattttcgcttgatccaacgaacca'
+    # t = 'ggtatacggggctttctagaccaaggaaaat'
+    # print(f"s={s}\nt={t}\nLCS(s,t)={lcs_rec(s,t)}\n-----")
+    # print("teste 5:")
+    # s = 'tctgggaatgcggtctcgcttagctgcggggacgacgagcagtgaacgacgcttcccacgc'
+    # t = 'ttatggctcactaccacggccaaagaggtagagcacattttctacccaggctgaggtgtcctcttaccttt'
+    # print(f"s={s}\nt={t}\nLCS(s,t)={lcs_rec(s,t)}\n-----")
     
 #----------------------------------------------
 def subseq (s, t):
@@ -106,10 +125,25 @@ def subseq (s, t):
         RECEBE strings s e t.
         RETORNA True se s é subsequência de t.
     '''
-    if s in t:
-        return True
-    else:
-        return False
+    tam_s = len(s)
+    tam_t = len(t)
+    
+    indice_s = 0
+    indice_t = 0
+    while indice_s < tam_s and indice_t < tam_t:
+        achei_em_t = False
+        while indice_t < tam_t:
+            if s[indice_s] == t[indice_t]:
+                indice_t+=1
+                achei_em_t = True
+                break
+            indice_t+=1
+        if not achei_em_t: return False
+        indice_s+=1
+        
+    if indice_s == tam_s: return True
+    return False 
+ 
     
 #----------------------------------------------
 def lcs_rec(s, t):
