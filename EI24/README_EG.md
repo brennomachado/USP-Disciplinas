@@ -6,10 +6,10 @@ Tipo de trabalho: Trabalho individual
 
 ## De heaps a ordenação e até filas
 
-<div style="text-align: center">
+<div align="center">
   <img height="300" src="01_eg.png">
   <br>
-  Fonte: [xkcd](http://xkcd.com/835/).
+  Fonte: <a href="http://xkcd.com/835/">xkcd</a>.
 </div>
 
 ### Preparação padrão
